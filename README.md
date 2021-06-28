@@ -14,6 +14,12 @@ mvn clean package
 
 #### Run in docker container
 
+Create Application Image
+
+````
+docker build -t springboot-mongodb:1.0 .
+````
+
 Run below command to start application along with a **mongodb** service in Docker.
 
 ```
@@ -25,5 +31,5 @@ docker-compose up
 Navigate to below URL to view API docs.
 
 ```
-http://localhost:8080/swagger-ui/
+http://localhost:8081/swagger-ui/index.html
 ```
